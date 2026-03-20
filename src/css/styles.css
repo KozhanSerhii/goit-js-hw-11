@@ -81,12 +81,17 @@ body {
   font-weight: 600;
 }
 
-.loading-notification {
+.loader {
+  display: block;
+  font-family: Arial, sans-serif;
   font-size: 16px;
+  line-height: 1.5;
   color: #2e2e2e;
-  margin-bottom: 20px;
+  text-align: center;
+  margin: 20px auto;
 }
 
+/* Клас для приховування */
 .hidden {
   display: none;
 }
