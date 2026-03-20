@@ -2,7 +2,7 @@ import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
 const galleryContainer = document.querySelector('.gallery');
-const loader = document.querySelector('.loader');
+const loader = document.querySelector('.loader'); // Змінено на .loader
 
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
@@ -27,7 +27,6 @@ export function createGallery(images) {
     .join('');
 
   galleryContainer.insertAdjacentHTML('beforeend', markup);
-  
   lightbox.refresh();
 }
 
@@ -36,13 +35,9 @@ export function clearGallery() {
 }
 
 export function showLoader() {
-  if (loader) {
-    loader.classList.remove('hidden');
-  }
+  if (loader) loader.classList.remove('hidden');
 }
 
 export function hideLoader() {
-  if (loader) {
-    loader.classList.add('hidden');
-  }
+  if (loader) loader.classList.add('hidden');
 }
